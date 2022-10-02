@@ -51,7 +51,13 @@ function writeToFile(fileName, data) {
     const contents = `
 # ${data.title}
 ## Description\n${data.description}
-
+## Table of contents
+- [Insallation](#Insallation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contribution](#Contributing)
+- [Test](#Test)
+- [FAQ](#FAQ)
 ## Insallation\n${data.installation}
 ## Usage\n${data.usage}
 ## License\n${data.license}
