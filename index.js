@@ -41,15 +41,34 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter the Frequently asked questions',
-        name: 'faq'
+        message: 'Enter GitHub username',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'Enter email address ',
+        name: 'email'
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    let license = '';
+    switch (data.license) {
+        case 'Apache':
+            license='[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            break;
+        case 'GNU':
+            license='[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+            break;
+        case 'MIT':
+            license='[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+        default:
+            break;
+    }
     const contents = `
 # ${data.title}
+${license}
 ## Description\n${data.description}
 ## Table of contents
 - [Insallation](#Insallation)
@@ -57,13 +76,14 @@ function writeToFile(fileName, data) {
 - [License](#License)
 - [Contribution](#Contributing)
 - [Test](#Test)
-- [FAQ](#FAQ)
+- [Questions](#Questions)
 ## Insallation\n${data.installation}
 ## Usage\n${data.usage}
-## License\n${data.license}
 ## Contributing\n${data.contributing}
 ## Test\n${data.test}
-## FAQ\n${data.faq}`;
+## Questions
+[${data.github}](https://github.com/${data.github})\n
+[${data.email}](${data.email})`;
     fs.writeFileSync(fileName, contents)
 }
 
