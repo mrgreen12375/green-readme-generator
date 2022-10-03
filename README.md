@@ -21,3 +21,7 @@ npm run test
 GitHub Username: [mrgreen12375](https://github.com/mrgreen12375)
 
 Email Address: [ste2144105@gmail.com](ste2144105@gmail.com)
+## Deployment Links
+- Screencastify: https://drive.google.com/file/d/1w09OKSpE92B0jTqyTqFDlDGEDFtMDOSQ/view
+
+- github repo: https://github.com/mrgreen12375/green-readme-generator
