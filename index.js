@@ -1,4 +1,4 @@
-// created cosnt for inpirer and fs
+// created cosnt for inquirer and fs
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs=require('fs');
@@ -84,8 +84,8 @@ ${license}
 ## Contributing\n${data.contributing}
 ## Test\n${data.test}
 ## Questions
-[${data.github}](https://github.com/${data.github})\n
-[${data.email}](${data.email})`;
+GitHub Username: [${data.github}](https://github.com/${data.github})\n
+Email Address: [${data.email}](${data.email})`;
     fs.writeFileSync(fileName, contents)
 }
 
