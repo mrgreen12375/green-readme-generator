@@ -7,7 +7,7 @@ const fs=require('fs');
 const questions = [
     {
         type: 'input',
-        message: 'Whats the title of you project?',
+        message: 'What is the title of your project?',
         name: 'title'
     },
     {
