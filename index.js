@@ -76,7 +76,6 @@ ${license}
 ## Table of contents
 - [Insallation](#Insallation)
 - [Usage](#Usage)
-- [License](#License)
 - [Contribution](#Contributing)
 - [Test](#Test)
 - [Questions](#Questions)
