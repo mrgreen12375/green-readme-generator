@@ -74,12 +74,12 @@ function writeToFile(fileName, data) {
 ${license}
 ## Description\n${data.description}
 ## Table of contents
-- [Insallation](#Insallation)
+- [Installation](#Insallation)
 - [Usage](#Usage)
 - [Contribution](#Contributing)
 - [Test](#Test)
 - [Questions](#Questions)
-## Insallation\n${data.installation}
+## Installation\n${data.installation}
 ## Usage\n${data.usage}
 ## Contributing\n${data.contributing}
 ## Test\n${data.test}
