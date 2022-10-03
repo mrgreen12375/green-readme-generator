@@ -1,8 +1,8 @@
 
-# test
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# green readme generator
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description
-test
+This project is to create a readme generator using prompt questions in the command line. Each question will create different sections of the readme. In this readme we want to display a title, license with badge, table of contents, description, installation, usage, contributors, test, and questions. The table of contents will link to the different sections of the readme. When a specific license choice is made it will show at the top of the readme under the title with a badge. Under the questions section when the user inputs there GitHub username it with create a link to there GitHub account. When the user puts in there email address it with create a link to there email.
 ## Table of contents
 - [Insallation](#Insallation)
 - [Usage](#Usage)
@@ -11,14 +11,14 @@ test
 - [Test](#Test)
 - [Questions](#Questions)
 ## Insallation
-test
+npm install
 ## Usage
-test
+node index.js
 ## Contributing
-test
+Steven Green
 ## Test
-test
+npm run test
 ## Questions
-[mrgreen12375](https://github.com/mrgreen12375)
+GitHub Username: [mrgreen12375](https://github.com/mrgreen12375)
 
-[ste2144105@gmail.com](ste2144105@gmail.com)
+Email Address: [ste2144105@gmail.com](ste2144105@gmail.com)
