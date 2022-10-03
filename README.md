@@ -6,7 +6,7 @@ This project is to create a readme generator using prompt questions in the comma
 ## Table of contents
 - [Insallation](#Insallation)
 - [Usage](#Usage)
-- [License](License)
+- [License](#green)
 - [Contribution](#Contributing)
 - [Test](#Test)
 - [Questions](#Questions)
