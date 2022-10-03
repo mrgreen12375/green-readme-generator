@@ -1,6 +1,8 @@
+// created cosnt for inpirer and fs
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs=require('fs');
+// created objects for the question asked to make the readme
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -13,12 +15,12 @@ const questions = [
         message: 'Enter description of your project',
         name: 'description'
     },
-    {
+    {   //npm install
         type: 'input',
         message: 'Enter the installation script',
         name: 'installation'
     },
-    {
+    {   //node index.js
         type: 'input',
         message: 'Enter the usage',
         name: 'usage'
@@ -34,7 +36,7 @@ const questions = [
         message: 'Enter the contributors (seperate by commas)',
         name: 'contributing'
     },
-    {
+    {   //npm run test
         type: 'input',
         message: 'Enter the test script',
         name: 'test'
@@ -50,7 +52,8 @@ const questions = [
         name: 'email'
     },
 ];
-
+// created switch statement to make the license and badge
+// created the elements that will display based off the answers to the object questions
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     let license = '';
