@@ -7,48 +7,48 @@ const fs=require('fs');
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of your project?',
+        message: 'Enter the title of your project:',
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Enter description of your project',
+        message: 'Enter description of your project:',
         name: 'description'
     },
     {   //npm install
         type: 'input',
-        message: 'Enter the installation script',
+        message: 'Enter the installation script:',
         name: 'installation'
     },
     {   //node index.js
         type: 'input',
-        message: 'Enter the usage',
+        message: 'Enter the usage:',
         name: 'usage'
     },
     {
         type: 'list',
-        message: 'Select license',
+        message: 'Select license:',
         name: 'license',
-        choices: ['none', 'Apache', 'GNU', 'MIT']
+        choices: ['Apache', 'GPL', 'MIT','None']
     },
     {
         type: 'input',
-        message: 'Enter the contributors (seperate by commas)',
+        message: 'Enter the contributors (seperate by commas):',
         name: 'contributing'
     },
     {   //npm run test
         type: 'input',
-        message: 'Enter the test script',
+        message: 'Enter the test script:',
         name: 'test'
     },
     {
         type: 'input',
-        message: 'Enter GitHub username',
+        message: 'Enter GitHub username:',
         name: 'github'
     },
     {
         type: 'input',
-        message: 'Enter email address ',
+        message: 'Enter email address:',
         name: 'email'
     },
 ];
@@ -56,17 +56,17 @@ const questions = [
 // created the elements that will display based off the answers to the object questions
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    let license = '';
     switch (data.license) {
         case 'Apache':
-            license='[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            license='[![License](https://img.shields.io/badge/License-Apache-red.svg)](https://opensource.org/licenses/apache)'
             break;
-        case 'GNU':
-            license='[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+        case 'GPL':
+            license='[![License: GPL 3.0](https://img.shields.io/badge/License-GPL-blue.svg)](https://opensource.org/licenses/gpl)'
             break;
         case 'MIT':
-            license='[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-        default:
+            license='[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/mit)'
+            break;
+        default: license=''
             break;
     }
     const contents = `
